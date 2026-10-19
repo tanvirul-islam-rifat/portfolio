@@ -1,0 +1,283 @@
+/* ==========================================================
+   Effects: boot intro, sound-effect bursts, kick-off mode
+   ========================================================== */
+
+/* ---------- Boot intro ---------- */
+
+.boot {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: grid;
+  place-items: center;
+  padding: var(--gutter);
+  color: #ebe3d0;
+}
+
+/* two halves so the intro can "tear" open like a page */
+.boot::before,
+.boot::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 50.5%;
+  background-color: #15131f;
+  background-image: radial-gradient(rgba(242, 230, 201, 0.06) 1.1px, transparent 1.6px);
+  background-size: 9px 9px;
+  transition: transform 0.75s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.boot::before {
+  top: 0;
+  border-bottom: 4px solid #ffc93c;
+}
+
+.boot::after {
+  bottom: 0;
+}
+
+.boot.is-opening::before {
+  transform: translateY(-102%);
+}
+
+.boot.is-opening::after {
+  transform: translateY(102%);
+}
+
+.boot.is-opening .boot__console,
+.boot.is-opening .boot__skip {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.boot__console {
+  width: min(100%, 620px);
+  padding: var(--s-5);
+  background: #0e0c16;
+  border: 3px solid #f2e6c9;
+  box-shadow: 8px 8px 0 #2ec4d6;
+  font-family: var(--font-mono);
+  font-size: clamp(0.78rem, 2.4vw, 0.92rem);
+  line-height: 1.7;
+}
+
+.boot__bar {
+  display: flex;
+  gap: 0.4rem;
+  margin: calc(-1 * var(--s-5)) calc(-1 * var(--s-5)) var(--s-4);
+  padding: 0.5rem 0.75rem;
+  border-bottom: 3px solid #f2e6c9;
+  background: #ffc93c;
+  color: #1b1726;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+}
+
+.boot__log {
+  min-height: 10.2em;
+  margin: 0;
+  white-space: pre-wrap;
+  font: inherit;
+}
+
+.boot__log .ok {
+  color: #2ec4d6;
+}
+
+.boot__log .hi {
+  color: #ffc93c;
+}
+
+.boot__progress {
+  height: 14px;
+  margin-top: var(--s-4);
+  border: 2px solid #f2e6c9;
+  background-image: radial-gradient(rgba(242, 230, 201, 0.15) 1px, transparent 1.5px);
+  background-size: 5px 5px;
+}
+
+.boot__progress span {
+  display: block;
+  width: 0;
+  height: 100%;
+  background: #ffc93c;
+  transition: width 0.18s linear;
+}
+
+.boot__pow {
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  transform: scale(0.2) rotate(-20deg);
+  pointer-events: none;
+}
+
+.boot__pow .burst {
+  --burst-size: min(60vw, 20rem);
+  --burst: #ff4f6d;
+  font-size: clamp(3rem, 11vw, 6rem);
+  letter-spacing: 0.04em;
+}
+
+.boot.is-pow .boot__pow {
+  animation: pow 0.55s var(--ease-pop) forwards;
+}
+
+@keyframes pow {
+  60% {
+    opacity: 1;
+    transform: scale(1.12) rotate(6deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+}
+
+.boot.is-opening .boot__pow {
+  animation: pow-out 0.4s ease forwards;
+}
+
+@keyframes pow-out {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1.8);
+  }
+}
+
+.boot__skip {
+  position: absolute;
+  right: var(--gutter);
+  bottom: var(--gutter);
+  padding: 0.4rem 0.9rem 0.25rem;
+  background: transparent;
+  color: #f2e6c9;
+  border: 2px solid #f2e6c9;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+}
+
+.boot__skip:hover {
+  background: #f2e6c9;
+  color: #15131f;
+}
+
+.boot[hidden],
+.boot-seen .boot {
+  display: none;
+}
+
+/* hero title slams in after the intro */
+.hero.is-entering .hero__name .line {
+  animation: slam 0.6s var(--ease-pop) both;
+}
+
+.hero.is-entering .hero__name .line--2 {
+  animation-delay: 0.08s;
+}
+
+.hero.is-entering .hero__name .line--3 {
+  animation-delay: 0.16s;
+}
+
+.hero.is-entering .cover-art {
+  animation: cover-in 0.8s var(--ease-pop) 0.15s both;
+}
+
+@keyframes slam {
+  from {
+    opacity: 0;
+    transform: translateX(-40px) skewX(-12deg);
+  }
+}
+
+@keyframes cover-in {
+  from {
+    opacity: 0;
+    transform: rotate(8deg) scale(0.85);
+  }
+}
+
+/* ---------- Sound-effect bursts ---------- */
+
+.sfx {
+  position: fixed;
+  z-index: 150;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+.sfx .burst {
+  --burst-size: 6.5rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.04em;
+  animation: sfx 0.75s var(--ease-pop) forwards;
+}
+
+@keyframes sfx {
+  0% {
+    opacity: 0;
+    transform: scale(0.2) rotate(-25deg);
+  }
+  35% {
+    opacity: 1;
+    transform: scale(1.1) rotate(5deg);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.25) translateY(-14px);
+  }
+}
+
+/* ---------- Kick-off mode (Konami code) ---------- */
+
+.ball {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 140;
+  width: 64px;
+  height: 64px;
+  padding: 0;
+  background: none;
+  border: 0;
+  cursor: grab;
+  touch-action: none;
+  will-change: transform;
+}
+
+.ball svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(3px 4px 0 rgba(0, 0, 0, 0.35));
+}
+
+.kickoff-banner {
+  position: fixed;
+  left: 50%;
+  top: 5.2rem;
+  z-index: 141;
+  transform: translateX(-50%);
+  padding: 0.4rem 1rem 0.25rem;
+  background: var(--yellow);
+  color: var(--on-yellow);
+  border: 3px solid var(--ink-dark);
+  box-shadow: 4px 4px 0 var(--shadow);
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  animation: toast-in 0.45s var(--ease-pop) both;
+}

@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Md. Tanvirul Islam Rifat — Software engineer, AI/ML and systems</title>
+  <meta name="description" content="Portfolio of Md. Tanvirul Islam Rifat, BSc Computer Science (BRAC University, 2026). Co-author of HyMaC-Net, accepted in Scientific Reports. Deep learning, systems software in C, networks and full-stack web.">
+  <meta name="author" content="Md. Tanvirul Islam Rifat">
+  <meta name="theme-color" content="#15131f">
+  <link rel="canonical" href="https://tanvirul-islam-rifat.vercel.app/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Md. Tanvirul Islam Rifat — Neural Ink, issue #01">
+  <meta property="og:description" content="Small models that punch above their weight, and software that proves its own numbers. Research, projects and CV.">
+  <meta property="og:url" content="https://tanvirul-islam-rifat.vercel.app/">
+  <meta property="og:image" content="https://tanvirul-islam-rifat.vercel.app/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Comic-book cover with Tanvirul Islam Rifat's portrait and the title Neural Ink.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preload" href="assets/fonts/bangers.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/fonts/atkinson-400.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/img/portrait-cutout-800.webp" as="image" type="image/webp" media="(min-width: 600px)">
+
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/sections.css">
+  <link rel="stylesheet" href="assets/css/effects.css">
+
+  <!-- Runs before paint: picks the saved theme and skips the intro if it was already seen. -->
+  <script src="assets/js/theme-init.js"></script>
+  <script type="module" src="assets/js/main.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Md. Tanvirul Islam Rifat",
+    "jobTitle": "Software Engineer",
+    "url": "https://tanvirul-islam-rifat.vercel.app/",
+    "image": "https://tanvirul-islam-rifat.vercel.app/assets/img/portrait-square.jpg",
+    "email": "mailto:tanvirulislamrifat0010@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Dhaka", "addressCountry": "BD" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "BRAC University" },
+    "knowsAbout": ["Deep learning", "Medical image classification", "PyTorch", "C", "Operating systems", "Compilers", "Computer networks", "Flask"],
+    "sameAs": ["https://github.com/tanvirul-islam-rifat", "https://www.linkedin.com/in/tanvirul-islam-rifat"]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a10.9 10.9 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" d="M3 5h18v14H3zM3 6l9 7 9-7"/></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m-5-5 5 5 5-5M4 20h16"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" d="M5 5l14 14M19 5 5 19"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" d="M8 8h12v12H8zM16 8V4H4v12h4"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v2.5M12 20v2.5M1.5 12H4M20 12h2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></g></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11Z"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" d="M3 6h18M3 12h18M3 18h18"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 1.8 2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.7-6.2 3.7 1.6-7L2 9l7.1-.6z"/></symbol>
+      <symbol id="i-chevron" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"/></symbol>
+      <symbol id="i-pointer" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M5 3l14 7-6 2-2 6z"/></symbol>
+      <symbol id="i-award" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-2 8 5.5-3 5.5 3-2-8"/></g></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.5 3.2-5.5 6.5-5.5s5.9 2 6.5 5.5"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.8c2 .8 3.2 2.6 3.5 5.2"/></g></symbol>
+      <symbol id="i-paper" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M6 2h9l5 5v15H6z"/><path d="M15 2v5h5M9 12h8M9 16h8"/></g></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ Boot intro ============ -->
+  <div class="boot" id="boot" role="status" aria-label="Loading">
+    <div class="boot__console" aria-hidden="true">
+      <div class="boot__bar">rifat@neural-ink: ~/issue-01</div>
+      <pre class="boot__log" id="boot-log"></pre>
+      <div class="boot__progress"><span id="boot-bar"></span></div>
+    </div>
+    <div class="boot__pow" aria-hidden="true"><span class="burst-wrap"><span class="burst">POW!</span></span></div>
+    <button class="boot__skip" type="button" id="boot-skip">Skip intro</button>
+  </div>
+
+  <!-- ============ Masthead ============ -->
+  <header class="masthead" id="masthead">
+    <div class="wrap masthead__inner">
+      <a class="logo" href="#origin" aria-label="Rifat, back to top">Rifat <small>#01</small></a>
+
+      <nav class="nav" id="nav" aria-label="Main">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#research">Research</a></li>
+          <li><a class="nav__link" href="#projects">Projects</a></li>
+          <li><a class="nav__link" href="#skills">Skills</a></li>
+          <li><a class="nav__link" href="#story">Story</a></li>
+          <li><a class="nav__link" href="#off-duty">Off duty</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="masthead__tools">
+        <button class="icon-btn sticker-count" type="button" id="album-open" aria-haspopup="dialog" title="Stickers collected">
+          <svg aria-hidden="true"><use href="#i-star"/></svg>
+          <span><b id="sticker-n">0</b>/<span id="sticker-total">6</span></span>
+          <span class="sr-only">stickers collected, open album</span>
+        </button>
+        <button class="icon-btn theme-toggle" type="button" id="theme-toggle" aria-pressed="false" title="Switch edition">
+          <svg class="icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+          <svg class="icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+          <span class="sr-only">Use day edition</span>
+        </button>
+        <button class="icon-btn menu-btn" type="button" id="menu-btn" aria-expanded="false" aria-controls="nav">
+          <svg aria-hidden="true"><use href="#i-menu"/></svg>
+          <span class="sr-only">Menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ Cover ============ -->
+    <section class="hero" id="origin" aria-labelledby="hero-title">
+      <canvas class="hero__net" id="hero-net" aria-hidden="true"></canvas>
+
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="cover-strip">
+            <span class="issue-tag">Issue #01</span>
+            <span>Neural Ink, the Dhaka edition</span>
+          </p>
+
+          <h1 class="hero__name" id="hero-title">
+            <span class="prefix">Md.</span>
+            <span class="line line--1">Tanvirul</span>
+            <span class="line line--2">Islam</span>
+            <span class="line line--3">Rifat</span>
+          </h1>
+
+          <p class="hero__say" aria-live="off">
+            Your next <span class="typer" id="typer" data-words="software engineer|machine learning engineer|systems programmer|full-stack developer|data scientist">software engineer</span>
+          </p>
+
+          <p class="caption hero__caption">
+            Computer Science graduate from BRAC University, 2026. I build small models that punch above their weight, and software that proves its own numbers.
+          </p>
+
+          <div class="hero__ctas">
+            <a class="btn btn--primary" href="#research">See the research</a>
+            <a class="btn" href="assets/docs/Tanvirul_Islam_Rifat_CV.pdf" download data-sfx="Yoink!">
+              <svg aria-hidden="true"><use href="#i-download"/></svg> Download CV
+            </a>
+          </div>
+
+          <p class="hero__hint"><svg aria-hidden="true"><use href="#i-pointer"/></svg>The background is a live network. Click it to fire neurons.</p>
+        </div>
+
+        <div class="cover-art">
+          <p class="bubble bubble--tail-bottom-right cover-art__bubble">Hi! I train models, write C, and test everything twice.</p>
+          <div class="cover-art__panel">
+            <img
+              src="assets/img/portrait-cutout-800.webp"
+              srcset="assets/img/portrait-cutout-480.webp 480w, assets/img/portrait-cutout-800.webp 800w"
+              sizes="(max-width: 900px) 340px, 440px"
+              width="800" height="1129"
+              alt="Portrait of Tanvirul Islam Rifat in a black double-breasted suit and glasses."
+              fetchpriority="high">
+          </div>
+          <a class="cover-art__burst burst-wrap" href="#research" aria-label="Paper accepted in Scientific Reports. Jump to research.">
+            <span class="burst">Paper accepted!<small>Scientific Reports</small></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Research ============ -->
+    <section class="section section--alt" id="research" aria-labelledby="research-title">
+      <div class="wrap">
+        <header class="section__head">
+          <h2 class="section__title" id="research-title"><span>Research</span></h2>
+          <p class="section__lede">Two papers about doing more with less compute. In both, every reported number can be re-checked from the repository.</p>
+        </header>
+        <div class="research" id="research-list">
+          <noscript><p>Turn on JavaScript to see the research panels, or browse the code on <a href="https://github.com/tanvirul-islam-rifat">GitHub</a>.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Projects ============ -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="wrap">
+        <header class="section__head">
+          <h2 class="section__title" id="projects-title"><span>Projects</span></h2>
+          <p class="section__lede">Systems, networks, graphics and the web. Open any panel for the full case file.</p>
+        </header>
+
+        <div class="filters" role="group" aria-label="Filter projects">
+          <ul class="chips" id="filters"></ul>
+        </div>
+
+        <div class="page-grid" id="feature-grid"></div>
+
+        <h3 class="more-head" id="more-head">More issues</h3>
+        <div class="more-grid" id="more-grid"></div>
+        <p class="sr-only" id="filter-status" aria-live="polite"></p>
+
+        <aside class="next-issue" id="next-issue" aria-label="Work in progress"></aside>
+
+        <details class="back-issues" id="back-issues">
+          <summary>Back issues <span id="back-issues-count">First-year coursework</span><svg aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+          <ul id="back-list"></ul>
+        </details>
+      </div>
+    </section>
+
+    <!-- ============ Skills ============ -->
+    <section class="section section--alt" id="skills" aria-labelledby="skills-title">
+      <div class="wrap">
+        <header class="section__head">
+          <h2 class="section__title" id="skills-title"><span>Skill map</span></h2>
+          <p class="section__lede">Built like a network: languages feed tools, tools feed what I build. Every connection comes from a public project. Pick a node.</p>
+        </header>
+
+        <div class="skillmap">
+          <div class="net panel" id="net">
+            <svg class="net__edges" id="net-edges" aria-hidden="true"></svg>
+            <div class="net__layers" id="net-layers"></div>
+          </div>
+          <aside class="readout panel panel--pop-cyan" id="readout" aria-live="polite">
+            <h3 class="readout__title">Pick a neuron</h3>
+            <p>Hover or tap any skill to light up its connections and the projects that use it.</p>
+          </aside>
+        </div>
+
+        <ul class="spoken" id="spoken" aria-label="Spoken languages"></ul>
+      </div>
+    </section>
+
+    <!-- ============ Story ============ -->
+    <section class="section" id="story" aria-labelledby="story-title">
+      <div class="wrap">
+        <header class="section__head">
+          <h2 class="section__title" id="story-title"><span>Origin story</span></h2>
+          <p class="section__lede">From Barishal to a journal acceptance, in six panels.</p>
+        </header>
+
+        <ol class="strip">
+          <li class="strip__panel panel">
+            <span class="strip__when">2018</span>
+            <h3>SSC, Science</h3>
+            <span class="strip__where">Barishal Zilla School</span>
+            <p>GPA 5.00 out of 5.00.</p>
+          </li>
+          <li class="strip__panel panel">
+            <span class="strip__when">2020</span>
+            <h3>HSC, Science</h3>
+            <span class="strip__where">Govt. Syed Hatem Ali College, Barishal</span>
+            <p>GPA 5.00 out of 5.00.</p>
+          </li>
+          <li class="strip__panel panel">
+            <span class="strip__when">2022</span>
+            <h3>Starts CS at BRAC University</h3>
+            <span class="strip__where">School of Data and Sciences, Dhaka</span>
+            <p>Rule for every course: build one real project and put it on GitHub.</p>
+          </li>
+          <li class="strip__panel panel">
+            <span class="strip__when">2023–25</span>
+            <h3>Senior Executive, BUCC</h3>
+            <span class="strip__where">BRAC University Computer Club</span>
+            <p>Organised campus-wide tech events, including programming contests and Database Wizards.</p>
+          </li>
+          <li class="strip__panel panel">
+            <span class="strip__when">2025</span>
+            <h3>Thesis: HyMaC-Net</h3>
+            <span class="strip__where">CSE400, team of four</span>
+            <p>22 ablation steps took a 138M-parameter model to 20.5M, and made it more accurate.</p>
+          </li>
+          <li class="strip__panel panel strip__panel--highlight">
+            <span class="strip__when">2026</span>
+            <h3>Graduates. Paper accepted.</h3>
+            <span class="strip__where">BSc in CS, CGPA 3.53</span>
+            <p>HyMaC-Net is accepted in Scientific Reports. Next: a job where I can ship real products.</p>
+          </li>
+        </ol>
+
+        <div class="badges">
+          <div class="badge">
+            <svg aria-hidden="true"><use href="#i-award"/></svg>
+            <div><b>Bronze Standard</b><span>The Duke of Edinburgh's International Award</span></div>
+          </div>
+          <div class="badge">
+            <svg aria-hidden="true"><use href="#i-users"/></svg>
+            <div><b>Team player</b><span>7 of these projects were built in teams of 2 to 4</span></div>
+          </div>
+          <div class="badge">
+            <svg aria-hidden="true"><use href="#i-paper"/></svg>
+            <div><b>28 public repositories</b><span>Each with a README that explains how it works</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Off duty ============ -->
+    <section class="section section--alt" id="off-duty" aria-labelledby="off-title">
+      <div class="wrap">
+        <header class="section__head">
+          <h2 class="section__title" id="off-title"><span>Off duty</span></h2>
+          <p class="section__lede">When the laptop closes: a paintbrush or a controller.</p>
+        </header>
+
+        <div class="offduty">
+          <div class="easel panel panel--pop-red">
+            <h3>The easel</h3>
+            <p>I paint to slow down. Your turn: leave a doodle. It stays in your browser, and you can save it.</p>
+            <canvas class="easel__canvas" id="easel" width="960" height="600" aria-label="Drawing canvas. Draw with a mouse, finger or pen."></canvas>
+            <div class="easel__tools" role="group" aria-label="Brush">
+              <button class="swatch" type="button" style="--swatch:#1b1726" data-color="#1b1726" aria-pressed="true"><span class="sr-only">Ink</span></button>
+              <button class="swatch" type="button" style="--swatch:#ff4f6d" data-color="#ff4f6d" aria-pressed="false"><span class="sr-only">Red</span></button>
+              <button class="swatch" type="button" style="--swatch:#ffc93c" data-color="#ffc93c" aria-pressed="false"><span class="sr-only">Yellow</span></button>
+              <button class="swatch" type="button" style="--swatch:#2ec4d6" data-color="#2ec4d6" aria-pressed="false"><span class="sr-only">Cyan</span></button>
+              <button class="swatch" type="button" style="--swatch:#5b48d6" data-color="#5b48d6" aria-pressed="false"><span class="sr-only">Violet</span></button>
+              <label class="easel__size">Brush <input type="range" id="brush" min="2" max="40" value="8"></label>
+              <span class="spacer"></span>
+              <button class="btn btn--small" type="button" id="easel-clear">Clear</button>
+              <button class="btn btn--small" type="button" id="easel-save"><svg aria-hidden="true"><use href="#i-download"/></svg> Save</button>
+            </div>
+          </div>
+
+          <div class="pitch panel panel--pop-yellow">
+            <h3>The pitch</h3>
+            <p>FC is how I unwind. Here's my card, rated honestly by me.</p>
+            <div class="card3d">
+              <button class="card3d__flip" type="button" id="player-card" aria-pressed="false" aria-label="Player card. Flip to read the back.">
+                <span class="card3d__face card3d__face--front" aria-hidden="false">
+                  <span class="pc-top">
+                    <span class="pc-rating">88<small>DEV</small></span>
+                    <span class="pc-rating" aria-hidden="true"><small>BD</small></span>
+                  </span>
+                  <img class="pc-photo" src="assets/img/portrait-cutout-480.webp" width="480" height="677" alt="" loading="lazy">
+                  <span class="pc-name">Rifat</span>
+                  <span class="pc-stats">
+                    <span><b>92</b> Python</span>
+                    <span><b>90</b> ML</span>
+                    <span><b>86</b> Systems</span>
+                    <span><b>85</b> Networks</span>
+                    <span><b>80</b> Web</span>
+                    <span><b>89</b> Teamwork</span>
+                  </span>
+                </span>
+                <span class="card3d__face card3d__face--back">
+                  <span class="pc-back-title">Playing style</span>
+                  <span class="pc-back-text">Reads the space before moving. Prefers the simple pass that works over the trick shot that might.</span>
+                  <span class="pc-back-text">Same rule in code: keep it small, test it, then ship it.</span>
+                </span>
+              </button>
+            </div>
+            <p class="card-hint">Tap the card to flip it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Contact ============ -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact">
+        <div class="bubble bubble--tail-bottom-left contact__bubble">
+          <h2 id="contact-title">Got a mission?</h2>
+          <p>I'm looking for software engineering, ML, full-stack and data roles, and internships. Email is the fastest way to reach me.</p>
+          <div class="mailbox">
+            <a href="mailto:tanvirulislamrifat0010@gmail.com" id="email-link">tanvirulislamrifat0010@gmail.com</a>
+            <button class="copy-btn" type="button" id="copy-email" data-email="tanvirulislamrifat0010@gmail.com">
+              <svg aria-hidden="true"><use href="#i-copy"/></svg><span>Copy</span>
+            </button>
+          </div>
+        </div>
+
+        <div>
+          <ul class="contact__links">
+            <li><a class="btn" href="https://github.com/tanvirul-islam-rifat" rel="me noopener" target="_blank">GitHub <svg aria-hidden="true"><use href="#i-github"/></svg></a></li>
+            <li><a class="btn" href="https://www.linkedin.com/in/tanvirul-islam-rifat" rel="me noopener" target="_blank">LinkedIn <svg aria-hidden="true"><use href="#i-linkedin"/></svg></a></li>
+            <li><a class="btn btn--primary" href="assets/docs/Tanvirul_Islam_Rifat_CV.pdf" download data-sfx="Yoink!">CV (PDF) <svg aria-hidden="true"><use href="#i-download"/></svg></a></li>
+          </ul>
+          <p class="contact__where">Based in Dhaka, Bangladesh (UTC+6). Happy to work on-site, hybrid or remote.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <p>© <span id="year">2026</span> Md. Tanvirul Islam Rifat. Hand-lettered in HTML, CSS and JavaScript.</p>
+      <p>Psst: try <kbd>↑</kbd><kbd>↑</kbd><kbd>↓</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd><kbd>←</kbd><kbd>→</kbd><kbd>B</kbd><kbd>A</kbd> for a kick-off.</p>
+    </div>
+  </footer>
+
+  <!-- Case file dialog -->
+  <dialog class="casefile" id="casefile" aria-labelledby="casefile-title">
+    <div class="casefile__bar">
+      <span id="casefile-label">Case file</span>
+      <button class="casefile__close" type="button" id="casefile-close"><svg aria-hidden="true"><use href="#i-x"/></svg><span class="sr-only">Close</span></button>
+    </div>
+    <div class="casefile__body" id="casefile-body"></div>
+  </dialog>
+
+  <!-- Sticker album -->
+  <dialog class="album" id="album" aria-labelledby="album-title">
+    <div class="casefile__bar">
+      <span id="album-title">Sticker album</span>
+      <button class="casefile__close" type="button" id="album-close"><svg aria-hidden="true"><use href="#i-x"/></svg><span class="sr-only">Close</span></button>
+    </div>
+    <div class="album__body">
+      <p>Hidden around the site are six stickers. Here's what you've found so far.</p>
+      <ul class="album__grid" id="album-grid"></ul>
+    </div>
+  </dialog>
+
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+</body>
+</html>

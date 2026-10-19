@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <polygon fill="#ffc93c" stroke="#1b1726" stroke-width="3" stroke-linejoin="round"
+    points="32,2 38,13 50,6 49,19 62,20 54,30 62,40 49,43 50,57 38,51 32,62 26,51 14,57 15,43 2,40 10,30 2,20 15,19 14,6 26,13"/>
+  <text x="32" y="43" text-anchor="middle" font-family="Impact, 'Arial Black', sans-serif" font-size="30" fill="#1b1726" transform="rotate(-6 32 32)">R</text>
+</svg>
